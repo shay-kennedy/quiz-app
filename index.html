@@ -10,10 +10,10 @@
 		<div class="quiz">
 			<h3 class="quizQuestion"></h3>
 			<form class="quizChoices">
-				<li><input name="quizAnswers" type="radio" value="choice1"></li>
-				<li><input name="quizAnswers" type="radio" value="choice2"></li>
-				<li><input name="quizAnswers" type="radio" value="choice3"></li>
-				<li><input name="quizAnswers" type="radio" value="choice4"></li>
+				<input name="quizAnswers" type="radio" id="choice1"/><label for="choice1"></label><br>
+				<input name="quizAnswers" type="radio" id="choice2"/><label for="choice2"></label><br>
+				<input name="quizAnswers" type="radio" id="choice3"/><label for="choice3"></label><br>
+				<input name="quizAnswers" type="radio" id="choice4"/><label for="choice4"></label><br>
 			</form>
 			<button type="submit" id="submitButton">Submit</button>
 		</div>
@@ -23,9 +23,8 @@
 		<div class="scoreCount">
 			<p>You have <span class="correct"></span> of 5 correct.</p>
 		</div>
-
-	<script src="js/app.js" type="text/javascript"></script>
 	<script src="js/jquery-2.2.4.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
 

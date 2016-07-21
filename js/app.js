@@ -1,3 +1,4 @@
+$(document).ready(function() {
 // Question1 Prototype
 
 var Question1 = {
@@ -62,10 +63,25 @@ var ListOfQuestions = {
 	questionList: [Question1, question2, question3, question4, question5, question6, question7, question8, question9, question10]
 }
 
-// Check used for object questions 
+// Grabs Random Question
+
+var randomize = function() {
+  var randomIndex = ListOfQuestions.questionList[Math.floor(Math.random()*ListOfQuestions.questionList.length)];
+  console.log(randomIndex);
+}
+// Check used for object questions
 	// console.log(question2.getCorrectChoice());
 
+//var q1CorrectAnswer = Question1.getCorrectChoice();
+//console.log(q1CorrectAnswer);
+randomize();
+$('.quizQuestion').text("test");
+$('label[for=choice1]').text(" Answer 1 Test");
+$('label[for=choice2]').text(" Answer 2 Test");
+$('label[for=choice3]').text(" Answer 3 Test");
+$('label[for=choice4]').text(" Answer 4 Test");
+$('.count').text(" 1 ");
+$('.correct').text(" 5 ")
 
 
-var q1CorrectAnswer = Question1.getCorrectChoice();
-console.log(q1CorrectAnswer);
+})
