@@ -9,12 +9,12 @@
 	<h1>State Capital Quiz</h1>
 		<div class="quiz">
 			<h3 class="quizQuestion"></h3>
-			<ul class="quizChoices">
-				<li class="quizAnswers"></li>
-				<li class="quizAnswers"></li>
-				<li class="quizAnswers"></li>
-				<li class="quizAnswers"></li>
-			</ul>
+			<form class="quizChoices">
+				<li><input name="quizAnswers" type="radio" value="choice1"></li>
+				<li><input name="quizAnswers" type="radio" value="choice2"></li>
+				<li><input name="quizAnswers" type="radio" value="choice3"></li>
+				<li><input name="quizAnswers" type="radio" value="choice4"></li>
+			</form>
 			<button type="submit" id="submitButton">Submit</button>
 		</div>
 		<div class="questionCount">
@@ -32,7 +32,7 @@
 <!-- need header
 
 need section for game/quiz
-	
+
 need progress tracker
 
 need score tracker
